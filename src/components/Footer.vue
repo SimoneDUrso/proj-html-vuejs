@@ -1,10 +1,7 @@
 <script>
 export default {
     props: {
-    sections: {
-        type: Array,
-        required: true
-    }
+    sections: Object
     },
     methods: {
     isContactItem(item) {
@@ -21,7 +18,7 @@ export default {
         case "(315) 5512-2579":
             return "fa-solid fa-phone";
         case "everlead@mikado.com":
-            return "fa-regular fa-envelope";
+            return "fa-solid fa-envelope";
         default:
             return "";
         }
@@ -33,20 +30,20 @@ export default {
 <template>
     <footer class="footer-container">
         <div v-for="section in sections" :key="section.title" class="footer-section">
-        <h3>{{ section.title }}</h3>
-        <ul>
-            <li v-for="item in section.items" :key="item.text || item">
-            <!-- Mostra l'icona di Twitter solo se 'twitter' è true -->
-            <i class="fa-brands fa-twitter" v-if="item.twitter"></i>
+            <h3>{{ section.title }}</h3>
+            <ul>
+                <li v-for="item in section.items" :key="item.text || item">
+                    <!-- Mostra l'icona di Twitter solo se 'twitter' è true -->
+                    <i class="fa-brands fa-twitter" v-if="item.twitter"></i>
 
-            <!-- Aggiungi icone specifiche per la sezione Contact me -->
-            <i v-if="isContactItem(item)" :class="getIconClass(item)"></i>
+                    <!-- Aggiungi icone specifiche per la sezione Contact me -->
+                    <i v-if="isContactItem(item)" :class="getIconClass(item)"></i>
 
-            <!-- Visualizza il testo -->
-            <span>{{ item.text || item }}</span>
-        </li>
-        </ul>
-    </div>
+                    <!-- Visualizza il testo -->
+                    <span>{{ item.text || item }}</span>
+                </li>
+            </ul>
+        </div>
     </footer>
 </template>
 
@@ -56,6 +53,9 @@ export default {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
+    background-color: #1E1E1E;
+    color: #CCCCCC;
+    padding: 50px;
 }
 
 .footer-section {
@@ -76,17 +76,13 @@ export default {
 .footer-section ul li {
     margin-bottom: 5px;
     display: flex;
-    align-items: center; /* Allinea l'icona e il testo */
+    align-items: start;
 }
 
-.fa-twitter {
+.footer-section ul li i {
     margin-right: 8px;
     font-size: 16px;
-    margin-top: 2px;
-}
-
-.footer-section ul li span {
-    flex-grow: 1;
-    line-height: 1.5; 
+    line-height: 1;
+    color: #FF4612;
 }
 </style>

@@ -6,6 +6,8 @@ import Footer from "./components/Footer.vue";
 export default {
   data() {
     return {
+      menuItems: ["HOMES", "PAGES", "BLOG", "SHOP", "EVENTS", "ELEMENTS"],
+
       footerSections: [
         {
           title: "About",
@@ -51,7 +53,7 @@ export default {
 
 <template>
   <div>
-    <Header />
+    <Header :items="menuItems" />
     <Main />
     <Footer :sections="footerSections" />
   </div>
