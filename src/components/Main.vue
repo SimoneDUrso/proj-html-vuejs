@@ -82,13 +82,13 @@ export default {
         </div>
 
         <!-- TERZA SEZIONE -->
-        <div class="container">
+        <div class="container my-5">
             <div class="row">
                 <div class="col-7 position-relative p-0">
                     <img src="../assets/h1-blog-img-04.jpg" alt="" class="img-fluid">
                     <div class="orange-section position-absolute py-4 px-5">
-                        <i class="fa-solid fa-arrow-left-long me-3 fs-2" style="color: #ffffff;"></i>
-                        <i class="fa-solid fa-arrow-right-long fs-2" style="color: #ffffff;"></i>
+                        <a href=""><i class="fa-solid fa-arrow-left-long me-3 fs-2" style="color: #ffffff;"></i></a>
+                        <a href=""><i class="fa-solid fa-arrow-right-long fs-2" style="color: #ffffff;"></i></a>
                     </div>
                 </div>
 
@@ -98,12 +98,18 @@ export default {
                         <p class="lorem fs-5">Founder and executive director</p>
                         <hr>
                         <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, amet sapiente! Eaque hic repudiandae, deleniti a totam excepturi dolorum officia cumque perferendis, aperiam minima quo accusamus itaque expedita consequatur eligendi.</p>
-                        <i class="fa-brands fa-linkedin fs-3"></i>
-                        <i class="fa-brands fa-facebook fs-3 mx-3"></i>
-                        <i class="fa-brands fa-square-twitter fs-3"></i>
+                        <a href=""><i class="fa-brands fa-linkedin fs-3"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook fs-3 mx-3"></i></a>
+                        <a href=""><i class="fa-brands fa-square-twitter fs-3"></i></a>
+                        <span>Jason Brick</span>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <!-- QUARTA SEZIONE -->
+        <div class="">
+
         </div>
     </main>
 </template>
@@ -180,6 +186,12 @@ main{
                 background-color: #FF4612;
             }
             .fa-brands{
+                color: #FF4612;
+            }
+            span{
+                font-family: "Alex Brush", cursive;
+                font-size: 50px;
+                margin-left: 300px;
                 color: #FF4612;
             }
         }
