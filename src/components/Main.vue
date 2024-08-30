@@ -108,8 +108,82 @@ export default {
         </div>
 
         <!-- QUARTA SEZIONE -->
-        <div class="">
-
+        <div class="container-fourth-section">
+            <div class="row">
+                <div class="col-12">
+                    <div class="container-cards">
+                        <div class="card" style="width: 28rem;">
+                            <div class="card-header fs-3 fw-bold">
+                                Upcoming Events
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <div class="card" style="width: 28rem;">
+                                    <div class="card-body">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <div class="orange-square">
+                                                        <p class="fw-bold text-white">07</p>
+                                                        <p class="lorem">Jan, 2022</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-8">
+                                                    <h6 class="card-subtitle mb-2 text-body-secondary fw-bold fs-5">Melbourne Coaching</h6>
+                                                    <p class="card-text lorem"> <i class="fa-regular fa-clock"></i> 9:00 am - 5:00 pm, Jan 7, 2022 </p>
+                                                    <p class="lorem"><i class="fa-solid fa-location-dot"></i> Cambridge, MA 02138, USA</p>
+                                                    <p><a href="#" class="text-dark text-decoration-none fw-bold">READ MORE</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="card" style="width: 28rem;">
+                                    <div class="card-body">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <div class="orange-square">
+                                                        <p class="fw-bold text-white">11</p>
+                                                        <p class="lorem">Jan, 2022</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-8">
+                                                    <h6 class="card-subtitle mb-2 text-body-secondary fw-bold fs-5">New York Coaching</h6>
+                                                    <p class="card-text lorem"> <i class="fa-regular fa-clock"></i> 9:00 am - 5:00 pm, Jan 11, 2022 </p>
+                                                    <p class="lorem"><i class="fa-solid fa-location-dot"></i> Cambridge, MA 02138, USA</p>
+                                                    <p><a href="#" class="text-dark text-decoration-none fw-bold">READ MORE</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="card" style="width: 28rem;">
+                                    <div class="card-body">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <div class="orange-square">
+                                                        <p class="fw-bold text-white">21</p>
+                                                        <p class="lorem">Jan, 2022</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-8">
+                                                    <h6 class="card-subtitle mb-2 text-body-secondary fw-bold fs-5">London Coaching</h6>
+                                                    <p class="card-text lorem"> <i class="fa-regular fa-clock"></i> 9:00 am - 5:00 pm, Jan 21, 2022 </p>
+                                                    <p class="lorem"><i class="fa-solid fa-location-dot"></i> Cambridge, MA 02138, USA</p>
+                                                    <p><a href="#" class="text-dark text-decoration-none fw-bold">READ MORE</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 </template>
@@ -200,6 +274,28 @@ main{
         left: 0;
         bottom: 0;
         background-color: #FF4612;
+    }
+
+    .container-fourth-section{
+        background-image: url(../assets/h1-img-09.jpg);
+        height: 900px;
+        margin: 50px 0px;
+    }
+    .container-cards{
+        width: 1200px;
+        margin: 0 auto;
+        margin-top: 100px;
+
+        .orange-square{
+            padding: 10px 0px;
+            background-color: #FF4612;
+            text-align: center;
+            height: 80px;
+        }
+
+        .fa-regular, .fa-solid{
+            color: #FF4612;
+        }
     }
 }
 </style>
