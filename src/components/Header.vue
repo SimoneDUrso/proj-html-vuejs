@@ -30,8 +30,8 @@ props: {
 
 <style lang="scss" scoped>
 header {
-    background-color: #E1E1E1;
-    padding: 10px;
+    background-color: #fbfbfb;
+    padding: 10px 0px;
 }
 
 nav {

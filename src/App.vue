@@ -18,8 +18,14 @@ export default {
         {
           title: "Twitter",
           items: [
-            { text: '@aliasadadm Hi @aliasadadm, can you please submit a ticket at https://t.co/JLV61aXG7d and one of our support agents... https://t.co/JLV61aXG7d', twitter: true },
-            { text: '@HenrySefaBoaky1 Check out our theme Gioia which has all necessary elements to build a multi vendor marketplace. https://t.co/c9BlYxZBlL', twitter: true },
+            { 
+            text: '@aliasadadm Hi @aliasadadm, can you please submit a ticket at https://t.co/JLV61aXG7d and one of our support agents... https://t.co/JLV61aXG7d', 
+            twitter: true 
+            },
+            { 
+            text: '@HenrySefaBoaky1 Check out our theme Gioia which has all necessary elements to build a multi vendor marketplace. https://t.co/c9BlYxZBlL', 
+            twitter: true 
+            },
           ]
         },
         {
