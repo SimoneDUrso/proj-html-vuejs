@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <main>
+    <main class="bg-light">
         <!-- CONTAINER PER LA PRIMA SEZIONE -->
         <div class="container-full d-flex flex-column justify-content-center">
             <div class="row align-items-center">
@@ -49,7 +49,7 @@ export default {
         </div>
 
         <!-- SECONDA SEZIONE -->
-        <div class="container">
+        <div class="container-specialties position-relative p-4">
             <div class="text-center">
                 <span class="fw-bold fs-2">Our Specialties</span><span class="text-danger fw-bolder fs-2">.</span>
                 <p class="lorem fs-4">Lorem, ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -58,20 +58,30 @@ export default {
                 </div>
             </div>
             <div class="row">
-                <div class="col-3">
-                    ciao
+                <div class="col-3 text-center">
+                    <img src="../assets/svg-0.svg" alt="">
+                    <p class="fs-2"><strong>Knowing</strong></p>
+                    <p class="lorem fs-5">Lorem, ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
-                <div class="col-3">
-                    ciao
+                <div class="col-3 text-center">
+                    <img src="../assets/svg-1.svg" alt="">
+                    <p class="fs-2"><strong>Selling</strong></p>
+                    <p class="lorem fs-5">Lorem, ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
-                <div class="col-3">
-                    ciao
+                <div class="col-3 text-center">
+                    <img src="../assets/svg-2.svg" alt="">
+                    <p class="fs-2"><strong>Learning</strong></p>
+                    <p class="lorem fs-5">Lorem, ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
-                <div class="col-3">
-                    ciao
+                <div class="col-3 text-center">
+                    <img src="../assets/svg-3.svg" alt="">
+                    <p class="fs-2"><strong>Contact</strong></p>
+                    <p class="lorem fs-5">Lorem, ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
         </div>
+
+        <!-- TERZA SEZIONE -->
     </main>
 </template>
 <style lang="scss" scoped>
@@ -114,6 +124,13 @@ main{
         width: 50px;
         color: red;
         background-color: red;
+    }
+
+    .container-specialties.position-relative{
+        width: 1800px;
+        margin: 0 auto;
+        top: -40px;
+        background-color: white;
     }
 }
 </style>
