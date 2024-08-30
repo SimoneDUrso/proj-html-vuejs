@@ -60,30 +60,54 @@ export default {
             <div class="row">
                 <div class="col-3 text-center">
                     <img src="../assets/svg-0.svg" alt="">
-                    <p class="fs-2"><strong>Knowing</strong></p>
+                    <p class="fs-3"><strong>Knowing</strong></p>
                     <p class="lorem fs-5">Lorem, ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
                 <div class="col-3 text-center">
                     <img src="../assets/svg-1.svg" alt="">
-                    <p class="fs-2"><strong>Selling</strong></p>
+                    <p class="fs-3"><strong>Selling</strong></p>
                     <p class="lorem fs-5">Lorem, ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
                 <div class="col-3 text-center">
                     <img src="../assets/svg-2.svg" alt="">
-                    <p class="fs-2"><strong>Learning</strong></p>
+                    <p class="fs-3"><strong>Learning</strong></p>
                     <p class="lorem fs-5">Lorem, ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
                 <div class="col-3 text-center">
                     <img src="../assets/svg-3.svg" alt="">
-                    <p class="fs-2"><strong>Contact</strong></p>
+                    <p class="fs-3"><strong>Contact</strong></p>
                     <p class="lorem fs-5">Lorem, ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
         </div>
 
         <!-- TERZA SEZIONE -->
+        <div class="container">
+            <div class="row">
+                <div class="col-7 position-relative p-0">
+                    <img src="../assets/h1-blog-img-04.jpg" alt="" class="img-fluid">
+                    <div class="orange-section position-absolute py-4 px-5">
+                        <i class="fa-solid fa-arrow-left-long me-3 fs-2" style="color: #ffffff;"></i>
+                        <i class="fa-solid fa-arrow-right-long fs-2" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+
+                <div class="col-5">
+                    <div class="container-jason px-4 py-5 fw-bold">
+                        <h2>Jason Bickford</h2>
+                        <p class="lorem fs-5">Founder and executive director</p>
+                        <hr>
+                        <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, amet sapiente! Eaque hic repudiandae, deleniti a totam excepturi dolorum officia cumque perferendis, aperiam minima quo accusamus itaque expedita consequatur eligendi.</p>
+                        <i class="fa-brands fa-linkedin fs-3"></i>
+                        <i class="fa-brands fa-facebook fs-3 mx-3"></i>
+                        <i class="fa-brands fa-square-twitter fs-3"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </template>
+
 <style lang="scss" scoped>
 main{
     height: 100%;
@@ -118,19 +142,52 @@ main{
     .lorem{
         color: #BDBDBD;
     }
-    hr {
-        border: none;
-        height: 2px;
-        width: 50px;
-        color: red;
-        background-color: red;
-    }
+    
 
     .container-specialties.position-relative{
         width: 1800px;
         margin: 0 auto;
         top: -40px;
         background-color: white;
+        hr {
+            border: none;
+            height: 2px;
+            width: 50px;
+            color: #FF4612;
+            background-color: #FF4612;
+        }
+    }
+
+    .container .col-5{
+        background-image: url(../assets/svg-4.svg);
+        position: relative;
+        bottom: 20px;
+        left: 300px;
+
+        .container-jason{
+            width: 800px;
+            height: 400px;
+            background-color: white;
+            position: relative;
+            top: 80px;
+            right: 450px;
+
+            hr {
+                border: none;
+                height: 2px;
+                width: 100px;
+                color: #FF4612;
+                background-color: #FF4612;
+            }
+            .fa-brands{
+                color: #FF4612;
+            }
+        }
+    }
+    .container .orange-section{
+        left: 0;
+        bottom: 0;
+        background-color: #FF4612;
     }
 }
 </style>
