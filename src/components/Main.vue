@@ -375,12 +375,20 @@ export default {
         </div>
 
         <!-- OTTAVA SEZIONE -->
+        <div class="container-eighth-section">
+            <div class="row h-100 d-flex align-items-center justify-content-center">
+                <div class="col-12 text-center">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+            </div>
+        </div>
     </main>
 </template>
 
 <style lang="scss" scoped>
 main{
     height: 100%;
+    overflow-x: hidden;
 
     .container-full{
         height: 800px;
@@ -636,6 +644,18 @@ main{
                 }
             }
         }
+    }
+    .container-eighth-section{
+        height: 900px;
+        background-image: url(../assets/h1-img-04.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+
+    .col-12 {
+        font-size: 3rem;
+        color: #fff;
+    }
     }
 }
 </style>
