@@ -332,6 +332,49 @@ export default {
                 </div>
             </div>
         </div>
+
+        <!-- SETTIMA SEZIONE -->
+        <div class="container-seventh-section position-relative">
+            <div class="row">
+                <div class="col-12">
+                    <h2><strong>Testimonials.</strong></h2>
+                    <div class="container-testimonials position-absolute">
+                        <div class="row text-white">
+                            <div class="col-2 d-flex align-items-center justify-content-start">
+                                <button class="btn btn-md text-white fs-2"><i class="fa-solid fa-arrow-left-long"></i></button>
+                            </div>
+        
+                            <div class="col-8 text-center">
+                                <img src="../assets/h3-img-04.png" alt="">
+                                <p class="fw-bold fs-4 mt-4">Cynthia Clark</p>
+                                <p class="lorem fs-5">"Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Non quia, temporibus nemo tenetur sapiente doloribus expedita ducimus architecto 
+                                    tempore in qui odio quasi omnis inventore sint perspiciatis id quam animi?"</p>
+                                    
+                                <!-- BARRA DI PROGRESSIONE DEI PROFILI -->
+                                <div class="progress-bar-container mt-4 d-flex align-items-center justify-content-center w-25">
+                                    <span class="progress-bar-start">01</span>
+
+                                    <div class="progress-bar">
+                                        <div class="progress">
+
+                                        </div>
+                                    </div>
+                                    
+                                    <span class="progress-bar-end">03</span>
+                                </div>
+                            </div>
+        
+                            <div class="col-2 d-flex align-items-center justify-content-end fs-2">
+                                <button class="btn btn-md text-white fs-2"><i class="fa-solid fa-arrow-right-long"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- OTTAVA SEZIONE -->
     </main>
 </template>
 
@@ -534,6 +577,64 @@ main{
                 }
             }
 
+        }
+    }
+    .container-seventh-section{
+        height: 500px;
+        background-color: #1E1E1E;
+        padding: 0;
+
+        h2{
+            font-size: 200px;
+            text-align: center;
+        }
+
+        .col-12{
+            z-index: 1;
+
+            .container-testimonials{
+                width: 1600px;
+                z-index: 10;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+
+                .col-8{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+
+                    .progress-bar-container {
+                        width: 100%;
+                    }
+                    
+                    .progress-bar {
+                        flex-grow: 1;
+                        height: 3px; 
+                        background-color: #ccc; 
+                        margin: 0 10px;
+                        position: relative;
+                        border-radius: 3px;
+                    }
+                    
+                    .progress {
+                        width: 33%;
+                        height: 100%;
+                        background-color: #fff;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        border-radius: 3px;
+                    }
+                    
+                    .progress-bar-start,
+                    .progress-bar-end {
+                        font-weight: bold;
+                        font-size: 1rem;
+                    }
+                }
+            }
         }
     }
 }
