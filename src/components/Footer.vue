@@ -1,10 +1,11 @@
 <script>
 export default {
     props: {
-    sections: Object
+    sections: Array
     },
+
     methods: {
-    isContactItem(item) {
+    ContactItem(item) {
         // Verifica se l'elemento è nella sezione "Contact me"
         return item === "457 BigBlue Street, NY 10013" ||
                 item === "(315) 5512-2579" ||
@@ -28,21 +29,29 @@ export default {
 </script>
 
 <template>
-    <footer class="footer-container">
-        <div v-for="section in sections" :key="section.title" class="footer-section">
-            <h3>{{ section.title }}</h3>
-            <ul>
-                <li v-for="item in section.items" :key="item.text || item">
-                    <!-- Mostra l'icona di Twitter solo se 'twitter' è true -->
-                    <i class="fa-brands fa-twitter" v-if="item.twitter"></i>
-
-                    <!-- Aggiungi icone specifiche per la sezione Contact me -->
-                    <i v-if="isContactItem(item)" :class="getIconClass(item)"></i>
-
-                    <!-- Visualizza il testo -->
-                    <span>{{ item.text || item }}</span>
-                </li>
-            </ul>
+    <footer>
+        <div class="footer-container">
+            <div v-for="section in sections" :key="section.title" class="footer-section">
+                <h3>{{ section.title }}</h3>
+                <ul>
+                    <li v-for="item in section.items" :key="item.text || item">
+                        <!-- Mostra l'icona di Twitter solo se 'twitter' è true -->
+                        <i class="fa-brands fa-twitter" v-if="item.twitter"></i>
+    
+                        <!-- Aggiungi icone specifiche per la sezione Contact me -->
+                        <i v-if="ContactItem(item)" :class="getIconClass(item)"></i>
+    
+                        <!-- Visualizza il testo -->
+                        <span>{{ item.text || item }}</span>
+                    </li>
+                    <div class="about-icons">
+                        <i v-for="icon in section.icons" :class="icon.class" :key="icon.label"></i>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            Copyright Everlead©MikadoThemes
         </div>
     </footer>
 </template>
@@ -84,5 +93,21 @@ export default {
     font-size: 16px;
     line-height: 1;
     color: #FF4612;
+}
+
+.about-icons {
+    margin-top: 10px;
+}
+
+.about-icons i {
+    font-size: 20px;
+    margin-right: 15px;
+    color: white;
+}
+
+.footer-bottom{
+    background-color: #FF4612;
+    color: #CCCCCC;
+    padding: 5px 0px;
 }
 </style>

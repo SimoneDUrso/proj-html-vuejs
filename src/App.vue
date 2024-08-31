@@ -13,6 +13,11 @@ export default {
           title: "About",
           items: [
             "We created Everlead to effectively become the stepping stone towards meeting all your goals & achieving business success.",
+          ],
+          icons: [
+            { class: "fa-brands fa-linkedin", label: "Icon 1" },
+            { class: "fa-brands fa-facebook", label: "Icon 2" },
+            { class: "fa-brands fa-square-twitter", label: "Icon 3" },
           ]
         },
         {
