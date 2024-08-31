@@ -382,6 +382,58 @@ export default {
                 </div>
             </div>
         </div>
+
+        <!-- NONA SEZIONE -->
+        <div class="container-ninth-section">
+            <div class="row h-100">
+                <div class="col-6 bg-world d-flex justify-content-center align-items-center">
+                    <img src="../assets/h1-contact-rev-02.png" alt="" class="position-absolute plus-1">
+                    <img src="../assets/h1-contact-rev-02.png" alt="" class="position-absolute plus-2">
+                    <img src="../assets/h1-contact-rev-02.png" alt="" class="position-absolute plus-3">
+                    <div class="position-relative coaching">
+                        <h3>New York Coaching</h3>
+                        <p class="read-more fw-bold">READ MORE</p>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <span class="fw-bold fs-1">Contact us</span><span class="text-danger fw-bold fs-1">.</span>
+                    <p class="lorem fs-4"> Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <hr>
+                    <div class="d-flex">
+                        <input type="text" placeholder="Your Name" class="form-control me-3">
+                        <input type="email" placeholder="Your Email" class="form-control ms-3">
+                    </div>
+                    <textarea placeholder="Write a message..." class="form-control mt-2" rows="5" cols="50"></textarea>
+                    <div class="me-5 d-flex p-2 pointer purchase text-white w-25 mt-4">
+                        <div class="p-3 border-end border-light">
+                            SEND
+                        </div>
+                        <div class="px-3 py-2 d-flex text-white d-flex align-items-center">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Seconda riga con meno margine superiore -->
+            <div class="row row-images">
+                <div class="col-20 d-flex justify-content-center">
+                    <img src="../assets/h4-clients-img-03.png" alt="">
+                </div>
+                <div class="col-20 d-flex justify-content-center">
+                    <img src="../assets/h4-clients-img-05.png" alt="">
+                </div>
+                <div class="col-20 d-flex justify-content-center">
+                    <img src="../assets/h4-clients-img-07.png" alt="">
+                </div>
+                <div class="col-20 d-flex justify-content-center">
+                    <img src="../assets/h4-clients-img-09.png" alt="">
+                </div>
+                <div class="col-20 d-flex justify-content-center">
+                    <img src="../assets/h4-clients-img-01.png" alt="">
+                </div>
+            </div>
+        </div>
     </main>
 </template>
 
@@ -656,6 +708,77 @@ main{
         font-size: 3rem;
         color: #fff;
     }
+}
+    .container-ninth-section{
+        height: 600px;
+        width: 1200px;
+        margin: 200px auto;
+        
+        
+        .col-6.bg-world{
+            background-image: url(../assets/h1-contact-rev-01.png);
+            background-repeat: no-repeat;
+            position: relative;
+            .plus-1{
+                left: 150px;
+                top: 100px;
+            }
+
+            .plus-2{
+                left: 300px;
+                top: 70px;
+            }
+
+            .plus-3{
+                right: 100px;
+                top: 230px;
+            }
+            .coaching{
+                width: 300px;
+                padding: 10px;
+                background-color: white;
+                bottom: 120px;
+                right: 10px;
+
+                .read-more{
+                    height: 3px;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                }
+
+            }
+        }
+        .col-6{
+            hr {
+                border: none;
+                height: 2px;
+                width: 100px;
+                color: #FF4612;
+                background-color: #FF4612;
+            }
+            input{
+                border: none;
+                border-bottom: 2px solid #C0C0C0;
+            }
+            textarea{
+                border: none;
+                border-bottom: 2px solid #C0C0C0;
+            }
+            .purchase{
+                background-color: #FF4612;
+            }
+            .pointer{
+                cursor: pointer;
+            }
+        }
+        .row-images{
+            
+
+            .col-20{
+                width: 20%;
+            }
+        }
     }
 }
 </style>
