@@ -91,11 +91,28 @@ export default {
             color: #FF4612;
             background-color: #FF4612;
         }
-        .read-more{
-            height: 3px;
-            display: flex;
+        .read-more {
+            position: relative;
+            display: inline-flex;
             align-items: center;
+            padding-right: 30px;
             cursor: pointer;
+            transition: color 0.3s ease;
+        }
+        
+        .read-more::after {
+            content: "\f178";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            font-size: 1rem;
+            color: black;
+            margin-left: 10px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .read-more:hover::after {
+            opacity: 1;
         }
         .percent-bar {
             position: absolute;

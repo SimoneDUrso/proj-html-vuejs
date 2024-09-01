@@ -161,9 +161,6 @@ main {
             background-color: #FF4612;
         }
     }
-
-    
-
     .container-eighth-section {
         height: 900px;
         background-image: url(../assets/h1-img-04.jpg);
@@ -269,6 +266,14 @@ main {
         }
 
         .row-images {
+            img{
+
+                &:hover{
+                    filter: sepia(1) saturate(10000%) hue-rotate(-10deg) brightness(1) contrast(1);
+                    cursor: pointer;
+                }
+            }
+            
             .col-20 {
                 width: 20%;
 
@@ -284,6 +289,30 @@ main {
                 }
             }
         }
+    }
+    .read-more {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        padding-right: 40px;
+        cursor: pointer;
+        transition: color 0.3s ease;
+    }
+    
+    .read-more::after {
+        content: "\f178";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 1rem;
+        color: black;
+        position: absolute;
+        right: 150px;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    
+    .read-more:hover::after {
+        opacity: 1;
     }
 }
 </style>

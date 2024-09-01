@@ -114,6 +114,10 @@ export default {
         }
         .fa-brands{
             color: #FF4612;
+
+            &:hover{
+                color: black;
+            }
         }
         span{
             font-family: "Alex Brush", cursive;

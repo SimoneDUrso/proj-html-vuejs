@@ -31,7 +31,7 @@ export default {
                                                     <h6 class="card-subtitle mb-2 fw-bold fs-5">Melbourne Coaching</h6>
                                                     <p class="card-text lorem"> <i class="fa-regular fa-clock"></i> 9:00 am - 5:00 pm, Jan 7, 2022 </p>
                                                     <p class="lorem"><i class="fa-solid fa-location-dot"></i> Cambridge, MA 02138, USA</p>
-                                                    <p><a href="#" class="text-dark text-decoration-none fw-bold">READ MORE</a></p>
+                                                    <p><a href="#" class="text-dark text-decoration-none read-more fw-bold">READ MORE</a></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -52,7 +52,7 @@ export default {
                                                     <h6 class="card-subtitle mb-2 fw-bold fs-5">New York Coaching</h6>
                                                     <p class="card-text lorem"> <i class="fa-regular fa-clock"></i> 9:00 am - 5:00 pm, Jan 11, 2022 </p>
                                                     <p class="lorem"><i class="fa-solid fa-location-dot"></i> Cambridge, MA 02138, USA</p>
-                                                    <p><a href="#" class="text-dark text-decoration-none fw-bold">READ MORE</a></p>
+                                                    <p><a href="#" class="text-dark text-decoration-none read-more fw-bold">READ MORE</a></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -73,7 +73,7 @@ export default {
                                                     <h6 class="card-subtitle mb-2 fw-bold fs-5">London Coaching</h6>
                                                     <p class="card-text lorem"> <i class="fa-regular fa-clock"></i> 9:00 am - 5:00 pm, Jan 21, 2022 </p>
                                                     <p class="lorem"><i class="fa-solid fa-location-dot"></i> Cambridge, MA 02138, USA</p>
-                                                    <p><a href="#" class="text-dark text-decoration-none fw-bold">READ MORE</a></p>
+                                                    <p><a href="#" class="text-dark text-decoration-none read-more fw-bold">READ MORE</a></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -135,6 +135,34 @@ export default {
     }
     .lorem{
         color: #BDBDBD;
+    }
+    .read-more {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        padding-right: 40px;
+        cursor: pointer;
+        transition: color 0.3s ease;
+    }
+    
+    .read-more::after {
+        content: "\f178";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 1rem;
+        color: black;
+        position: absolute;
+        right: 0px;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    
+    .read-more:hover::after {
+        opacity: 1;
+    }
+    h6:hover{
+        color: #FF4612;
+        cursor: pointer;
     }
 }
 </style>
