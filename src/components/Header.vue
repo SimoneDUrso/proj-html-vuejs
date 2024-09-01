@@ -32,29 +32,51 @@ props: {
 header {
     background-color: #fbfbfb;
     padding: 10px 0px;
-}
+    }
 
-nav {
+    nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-}
+    }
 
-ul {
+    ul {
     list-style: none;
     display: flex;
     gap: 15px;
     align-items: center;
-}
+    }
 
-li {
+    li {
     display: flex;
     align-items: center;
     cursor: pointer;
-    margin: 0px 5px;
+    position: relative;
+    padding-left: 25px;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: #FF4612;
+    }
+
+    &::before {
+        content: "\f178";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 1rem;
+        color: #FF4612;
+        position: absolute;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    &:hover::before {
+        opacity: 1;
+    }
 }
+
 .fa {
     font-size: 1.1rem;
 }
-
 </style>
