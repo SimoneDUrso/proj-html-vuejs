@@ -33,8 +33,10 @@ export default {
         <div class="footer-container">
             <div v-for="section in sections" :key="section.title" class="footer-section">
                 <h3>{{ section.title }}</h3>
+                <hr>
                 <ul>
                     <li v-for="item in section.items" :key="item.text || item">
+                        
                         <!-- Mostra l'icona di Twitter solo se 'twitter' è true -->
                         <i class="fa-brands fa-twitter" v-if="item.twitter"></i>
     
@@ -78,6 +80,15 @@ export default {
     margin-bottom: 10px;
 }
 
+hr {
+    border: none;
+    height: 2px;
+    width: 50px;
+    color: #FF4612;
+    background-color: #FF4612;
+    margin-bottom: 20px;
+}
+
 .footer-section ul {
     list-style-type: none;
     padding: 0;
@@ -106,19 +117,19 @@ export default {
     color: white;
 }
 
-.footer-bottom{
+.footer-bottom {
     background-color: #FF4612;
     color: #CCCCCC;
     padding: 5px 0px;
 
-    .fa-arrow-up-long{
+    .fa-arrow-up-long {
         right: 20px;
         bottom: 10px;
         font-size: 30px;
         background-color: white;
         padding: 10px;
         border-radius: 100%;
-        box-shadow: 5px 10px 8px  #888888;
+        box-shadow: 5px 10px 8px #888888;
         color: #FF4612;
     }
 }

@@ -1,16 +1,17 @@
 <script>
-import { onMounted } from 'vue';
-import $ from 'jquery';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import 'slick-carousel/slick/slick.js';
 import bgCarousel from './bgCarousel.vue';
 import imageSlider from './imageSlider.vue';
+import fourthSection from './fourthSection.vue';
+import latestNews from './latestNews.vue';
+import creativeLeader from './creativeLeader.vue';
 
 export default {
     components:{
         bgCarousel,
         imageSlider,
+        fourthSection,
+        latestNews,
+        creativeLeader,
     },
 };
 </script>
@@ -57,234 +58,13 @@ export default {
         <imageSlider />
 
         <!-- QUARTA SEZIONE -->
-        <div class="container-fourth-section position-relative">
-            <a href="#"><i class="fa-solid fa-arrow-up-long position-absolute"></i></a>
-            <div class="row">
-                <div class="col-12">
-                    <a href="#"><i class="fa-solid fa-arrow-up-long position-absolute"></i></a>
-                    <div class="container-cards">
-                        <div class="card" style="width: 28rem;">
-                            <div class="card-header fs-3 fw-bold">
-                                Upcoming Events
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <div class="card" style="width: 28rem;">
-                                    <div class="card-body">
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col-4">
-                                                    <div class="orange-square">
-                                                        <p class="fw-bold text-white">07</p>
-                                                        <p class="lorem">Jan, 2022</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-8">
-                                                    <h6 class="card-subtitle mb-2 text-body-secondary fw-bold fs-5">Melbourne Coaching</h6>
-                                                    <p class="card-text lorem"> <i class="fa-regular fa-clock"></i> 9:00 am - 5:00 pm, Jan 7, 2022 </p>
-                                                    <p class="lorem"><i class="fa-solid fa-location-dot"></i> Cambridge, MA 02138, USA</p>
-                                                    <p><a href="#" class="text-dark text-decoration-none fw-bold">READ MORE</a></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-    
-                                <div class="card" style="width: 28rem;">
-                                    <div class="card-body">
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col-4">
-                                                    <div class="orange-square">
-                                                        <p class="fw-bold text-white">11</p>
-                                                        <p class="lorem">Jan, 2022</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-8">
-                                                    <h6 class="card-subtitle mb-2 text-body-secondary fw-bold fs-5">New York Coaching</h6>
-                                                    <p class="card-text lorem"> <i class="fa-regular fa-clock"></i> 9:00 am - 5:00 pm, Jan 11, 2022 </p>
-                                                    <p class="lorem"><i class="fa-solid fa-location-dot"></i> Cambridge, MA 02138, USA</p>
-                                                    <p><a href="#" class="text-dark text-decoration-none fw-bold">READ MORE</a></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-    
-                                <div class="card" style="width: 28rem;">
-                                    <div class="card-body">
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col-4">
-                                                    <div class="orange-square">
-                                                        <p class="fw-bold text-white">21</p>
-                                                        <p class="lorem">Jan, 2022</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-8">
-                                                    <h6 class="card-subtitle mb-2 text-body-secondary fw-bold fs-5">London Coaching</h6>
-                                                    <p class="card-text lorem"> <i class="fa-regular fa-clock"></i> 9:00 am - 5:00 pm, Jan 21, 2022 </p>
-                                                    <p class="lorem"><i class="fa-solid fa-location-dot"></i> Cambridge, MA 02138, USA</p>
-                                                    <p><a href="#" class="text-dark text-decoration-none fw-bold">READ MORE</a></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <fourthSection />
 
         <!-- QUINTA SEZIONE -->
-        <div class="container p-5 position-relative">
-            <a href="#"><i class="fa-solid fa-arrow-up-long position-absolute"></i></a>
-            <div class="row p-5">
-                <div class="col-6">
-                    <span class="fw-bold fs-2">Creative Leader</span><span class="text-danger fw-bolder fs-2">.</span>
-                    <hr>
-                    <p class="lorem">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia quisquam, nemo fugiat asperiores veniam molestiae accusamus facilis modi explicabo perferendis quasi quae, possimus id sed. Provident sit doloremque vitae consectetur!</p>
-                    <div class="py-4 read-more fw-bold">
-                        READ MORE
-                    </div>
-                </div>
-        
-                <div class="col-6">
-                    <!-- Primo Blocco Mentorship -->
-                    <div class="row border-bottom position-relative">
-                        <div class="col-10 p-0">
-                            <span class="fs-4"><strong>Mentorship</strong></span>
-                        </div>
-                        <div class="col-2 pb-2 text-end">
-                            <span class="fs-4"><strong>78%</strong></span>
-                        </div>
-                        <!-- Barra di percentuale -->
-                        <div class="percent-bar" style="width: 78%;"></div>
-                    </div>
-        
-                    <!-- Secondo Blocco Education -->
-                    <div class="row border-bottom position-relative my-4">
-                        <div class="col-10 p-0">
-                            <span class="fs-4"><strong>Education</strong></span>
-                        </div>
-                        <div class="col-2 pb-2 text-end">
-                            <span class="fs-4"><strong>95%</strong></span>
-                        </div>
-                        <!-- Barra di percentuale -->
-                        <div class="percent-bar" style="width: 95%;"></div>
-                    </div>
-        
-                    <!-- Terzo Blocco Learning -->
-                    <div class="row border-bottom position-relative my-4">
-                        <div class="col-10 p-0">
-                            <span class="fs-4"><strong>Learning</strong></span>
-                        </div>
-                        <div class="col-2 pb-2 text-end">
-                            <span class="fs-4"><strong>65%</strong></span>
-                        </div>
-                        <!-- Barra di percentuale -->
-                        <div class="percent-bar" style="width: 65%;"></div>
-                    </div>
-        
-                    <!-- Quarto Blocco Motivation -->
-                    <div class="row border-bottom position-relative">
-                        <div class="col-10 p-0">
-                            <span class="fs-4"><strong>Motivation</strong></span>
-                        </div>
-                        <div class="col-2 pb-2 text-end">
-                            <span class="fs-4"><strong>83%</strong></span>
-                        </div>
-                        <!-- Barra di percentuale -->
-                        <div class="percent-bar" style="width: 83%;"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <creativeLeader />
 
         <!-- SESTA SEZIONE -->
-        <div class="container-sixth-section position-relative">
-            <a href="#"><i class="fa-solid fa-arrow-up-long position-absolute"></i></a>
-            <div class="row">
-                <div class="col-12 text-center pt-5">
-                    <span class="fw-bold fs-2">Latest News</span><span class="text-danger fw-bold fs-2">.</span>
-                    <p class="lorem fs-4">Lorem, ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <div class="d-flex justify-content-center">
-                        <hr>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-1 d-flex align-items-center fs-2">
-                        <a href="#"><i class="fa-solid fa-arrow-left-long text-dark"></i></a>
-                    </div>
-                    <!-- Prima News -->
-                    <div class="col-md-3">
-                        <div class="card mb-4">
-                            <div class="double-img">
-                                    <img src="../assets/h1-blog-img-02.jpg" class="img-1" alt="Next investment">
-                                    <img src="../assets/h1-blog-img-03.jpg" class="img-2" alt="">
-                                    <div class="business-leading position-absolute">
-                                        <span><i class="fa-solid fa-tag"></i> Business, Leading</span>
-                                    </div>
-                            </div>
-                            <div class="card-body mt-5">
-                                <p class="card-title lorem"><i class="fa-regular fa-clock"></i> May 5, 2019 <i class="fa-regular fa-user"></i> Amanda Doe</p>
-                                <h3 class="card-text">Next investment</h3>
-                                <p class="lorem"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                                <div class="read-more fw-bold">
-                                    READ MORE
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Seconda News -->
-                    <div class="col-md-3">
-                        <div class="card mb-4">
-                            <div class="double-img">
-                                    <img src="../assets/h1-blog-img-03.jpg" class="img-1" alt="Next investment">
-                                    <img src="../assets/h1-blog-img-04.jpg" class="img-2" alt="">
-                                    <div class="business-leading position-absolute">
-                                        <span><i class="fa-solid fa-tag"></i> Business, Leading</span>
-                                    </div>
-                            </div>
-                            <div class="card-body mt-5">
-                                <p class="card-title lorem"><i class="fa-regular fa-clock"></i> May 5, 2019 <i class="fa-regular fa-user"></i> Amanda Doe</p>
-                                <h3 class="card-text">Team Building</h3>
-                                <p class="lorem"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                                <div class="read-more fw-bold">
-                                    READ MORE
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Terza News -->
-                    <div class="col-md-3">
-                        <div class="card mb-4">
-                            <div class="double-img">
-                                    <img src="../assets/h1-blog-img-04.jpg" class="img-1" alt="Next investment">
-                                    <img src="../assets/h1-blog-img-01.jpg" class="img-2" alt="">
-                                    <div class="business-leading position-absolute">
-                                        <span><i class="fa-solid fa-tag"></i> Business, Leading</span>
-                                    </div>
-                            </div>
-                            <div class="card-body mt-5">
-                                <p class="card-title lorem"><i class="fa-regular fa-clock"></i> May 5, 2019 <i class="fa-regular fa-user"></i> Amanda Doe</p>
-                                <h3 class="card-text">New Business Day</h3>
-                                <p class="lorem"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                                <div class="read-more fw-bold">
-                                    READ MORE
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-1 d-flex align-items-center justify-content-end fs-2">
-                        <a href="#"><i class="fa-solid fa-arrow-right-long text-dark"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <latestNews />
 
         <!-- SETTIMA SEZIONE -->
         <div class="container-seventh-section position-relative">
@@ -400,7 +180,6 @@ main{
     height: 100%;
     overflow-x: hidden;
 
-    
     .lorem{
         color: #BDBDBD;
     }
@@ -431,166 +210,6 @@ main{
         }
     }
 
-    .container-fourth-section{
-        background-image: url(../assets/h1-img-09.jpg);
-        padding-bottom: 140px;
-        margin: 50px 0px;
-
-        .fa-arrow-up-long{
-            right: 20px;
-            top: -80px;
-            font-size: 30px;
-            background-color: white;
-            padding: 10px;
-            border-radius: 100%;
-            box-shadow: 5px 10px 8px  #888888;
-            color: #FF4612;
-        }
-
-        .col-12{
-            .fa-arrow-up-long{
-                right: 20px;
-                top: 50%;
-                font-size: 30px;
-                background-color: white;
-                padding: 10px;
-                border-radius: 100%;
-                box-shadow: 5px 10px 8px  #888888;
-                color: #FF4612;
-            }
-        }
-    }
-    .container-cards{
-        width: 1200px;
-        margin: 0 auto;
-        margin-top: 100px;
-
-        .orange-square{
-            padding: 10px 0px;
-            background-color: #FF4612;
-            text-align: center;
-            height: 80px;
-        }
-
-        .fa-regular, .fa-solid{
-            color: #FF4612;
-        }
-    }
-
-    .container.p-5 {
-        .fa-arrow-up-long{
-            right: -280px;
-            top: 50%;
-            font-size: 30px;
-            background-color: white;
-            padding: 10px;
-            border-radius: 100%;
-            box-shadow: 5px 10px 8px  #888888;
-            color: #FF4612;
-        }
-        .col-6{
-            hr {
-                border: none;
-                height: 2px;
-                width: 100px;
-                color: #FF4612;
-                background-color: #FF4612;
-            }
-            .read-more{
-                height: 3px;
-                display: flex;
-                align-items: center;
-                cursor: pointer;
-            }
-            .percent-bar {
-                position: absolute;
-                bottom: -2px;
-                left: 0;
-                height: 4px;
-                background-color: #dc3545;
-            }
-            .lorem{
-                font-size: 18px;
-            }
-        }
-    }
-
-    .container-sixth-section{
-        background-color: #e1e1e167;
-        height: 800px;
-
-        .fa-arrow-up-long{
-            right: 20px;
-            top: 50%;
-            font-size: 30px;
-            background-color: white;
-            padding: 10px;
-            border-radius: 100%;
-            box-shadow: 5px 10px 8px  #888888;
-            color: #FF4612;
-        }
-
-        hr{
-                border: none;
-                height: 2px;
-                width: 100px;
-                color: #FF4612;
-                background-color: #FF4612;
-        }
-    }
-    .img-bot{
-        bottom: 100px;
-    }
-    .col-md-3 {
-        .double-img{
-            height: 240px;
-            position: relative;
-
-            .business-leading{
-                right: 10px;
-                bottom: -30px;
-                background-color: #FF4612;
-                padding: 10px 30px;
-                color: #E1E1E1;
-            }
-
-            .img-1, .img-2{
-                position: absolute;
-            }
-            .img-1{
-                width: 100%;
-            }
-            .img-2{
-                top: 80px;
-                width: 100%;
-                height: 180px;
-                object-fit: cover;
-                object-position: bottom;
-            }
-        }
-        .card{
-            min-height: 400px;
-            background-color: #e1e1e100;
-            border: none;
-            
-            .card-body{
-                background-color: #e1e1e100;
-                border: none;
-
-                .read-more{
-                    height: 3px;
-                    display: flex;
-                    align-items: center;
-                    cursor: pointer;
-                }
-
-                .fa-regular{
-                    color: #FF4612;
-                }
-            }
-
-        }
-    }
     .container-seventh-section{
         height: 500px;
         background-color: #1E1E1E;

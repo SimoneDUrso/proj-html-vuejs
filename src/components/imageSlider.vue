@@ -123,6 +123,16 @@ export default {
         }
     }
 }
+.fa-arrow-up-long{
+    right: -280px;
+    top: -160px;
+    font-size: 30px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 100%;
+    box-shadow: 5px 10px 8px  #888888;
+    color: #FF4612;
+}
     /* Assicura che le immagini siano stilizzate correttamente per lo slider */
 .single-item {
 width: 100%;
