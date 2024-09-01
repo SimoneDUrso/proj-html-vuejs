@@ -82,7 +82,8 @@ export default {
         </div>
 
         <!-- TERZA SEZIONE -->
-        <div class="container my-5">
+        <div class="container my-5 position-relative">
+            <a href="#"><i class="fa-solid fa-arrow-up-long position-absolute"></i></a>
             <div class="row">
                 <div class="col-7 position-relative p-0">
                     <img src="../assets/h1-blog-img-04.jpg" alt="" class="img-fluid">
@@ -108,9 +109,11 @@ export default {
         </div>
 
         <!-- QUARTA SEZIONE -->
-        <div class="container-fourth-section">
+        <div class="container-fourth-section position-relative">
+            <a href="#"><i class="fa-solid fa-arrow-up-long position-absolute"></i></a>
             <div class="row">
                 <div class="col-12">
+                    <a href="#"><i class="fa-solid fa-arrow-up-long position-absolute"></i></a>
                     <div class="container-cards">
                         <div class="card" style="width: 28rem;">
                             <div class="card-header fs-3 fw-bold">
@@ -187,7 +190,8 @@ export default {
         </div>
 
         <!-- QUINTA SEZIONE -->
-        <div class="container p-5">
+        <div class="container p-5 position-relative">
+            <a href="#"><i class="fa-solid fa-arrow-up-long position-absolute"></i></a>
             <div class="row p-5">
                 <div class="col-6">
                     <span class="fw-bold fs-2">Creative Leader</span><span class="text-danger fw-bolder fs-2">.</span>
@@ -211,7 +215,7 @@ export default {
                         <div class="percent-bar" style="width: 78%;"></div>
                     </div>
         
-                    <!-- Secondo Blocco Mentorship -->
+                    <!-- Secondo Blocco Education -->
                     <div class="row border-bottom position-relative my-4">
                         <div class="col-10 p-0">
                             <span class="fs-4"><strong>Education</strong></span>
@@ -223,7 +227,7 @@ export default {
                         <div class="percent-bar" style="width: 95%;"></div>
                     </div>
         
-                    <!-- Terzo Blocco Mentorship -->
+                    <!-- Terzo Blocco Learning -->
                     <div class="row border-bottom position-relative my-4">
                         <div class="col-10 p-0">
                             <span class="fs-4"><strong>Learning</strong></span>
@@ -235,7 +239,7 @@ export default {
                         <div class="percent-bar" style="width: 65%;"></div>
                     </div>
         
-                    <!-- Quarto Blocco Mentorship -->
+                    <!-- Quarto Blocco Motivation -->
                     <div class="row border-bottom position-relative">
                         <div class="col-10 p-0">
                             <span class="fs-4"><strong>Motivation</strong></span>
@@ -251,7 +255,8 @@ export default {
         </div>
 
         <!-- SESTA SEZIONE -->
-        <div class="container-sixth-section">
+        <div class="container-sixth-section position-relative">
+            <a href="#"><i class="fa-solid fa-arrow-up-long position-absolute"></i></a>
             <div class="row">
                 <div class="col-12 text-center pt-5">
                     <span class="fw-bold fs-2">Latest News</span><span class="text-danger fw-bold fs-2">.</span>
@@ -335,9 +340,10 @@ export default {
 
         <!-- SETTIMA SEZIONE -->
         <div class="container-seventh-section position-relative">
+            <a href="#"><i class="fa-solid fa-arrow-up-long position-absolute"></i></a>
             <div class="row">
                 <div class="col-12">
-                    <h2><strong>Testimonials.</strong></h2>
+                    <h2 class="position-relative"><strong>Testimonials.</strong></h2>
                     <div class="container-testimonials position-absolute">
                         <div class="row text-white">
                             <div class="col-2 d-flex align-items-center justify-content-start">
@@ -375,16 +381,19 @@ export default {
         </div>
 
         <!-- OTTAVA SEZIONE -->
-        <div class="container-eighth-section">
+        <div class="container-eighth-section position-relative">
+            <a href="#"><i class="fa-solid fa-arrow-up-long position-absolute arrow-up-2"></i></a>
             <div class="row h-100 d-flex align-items-center justify-content-center">
                 <div class="col-12 text-center">
+                    
                     <i class="fa-solid fa-play"></i>
                 </div>
             </div>
         </div>
 
         <!-- NONA SEZIONE -->
-        <div class="container-ninth-section">
+        <div class="container-ninth-section position-relative">
+            <a href="#"><i class="fa-solid fa-arrow-up-long position-absolute"></i></a>
             <div class="row h-100">
                 <div class="col-6 bg-world d-flex justify-content-center align-items-center">
                     <img src="../assets/h1-contact-rev-02.png" alt="" class="position-absolute plus-1">
@@ -415,7 +424,7 @@ export default {
                 </div>
             </div>
         
-            <!-- Seconda riga con meno margine superiore -->
+            <!-- Seconda riga con immagini -->
             <div class="row row-images">
                 <div class="col-20 d-flex justify-content-center">
                     <img src="../assets/h4-clients-img-03.png" alt="">
@@ -429,7 +438,8 @@ export default {
                 <div class="col-20 d-flex justify-content-center">
                     <img src="../assets/h4-clients-img-09.png" alt="">
                 </div>
-                <div class="col-20 d-flex justify-content-center">
+                <div class="col-20 d-flex justify-content-center position-relative">
+                    <a href="#"><i class="fa-solid fa-arrow-up-long position-absolute"></i></a>
                     <img src="../assets/h4-clients-img-01.png" alt="">
                 </div>
             </div>
@@ -472,7 +482,18 @@ main{
     .lorem{
         color: #BDBDBD;
     }
-    
+    .container.my-5.position-relative{
+        .fa-arrow-up-long{
+            right: -280px;
+            top: -150px;
+            font-size: 30px;
+            background-color: white;
+            padding: 10px;
+            border-radius: 100%;
+            box-shadow: 5px 10px 8px  #888888;
+            color: #FF4612;
+        }
+    }
 
     .container-specialties.position-relative{
         width: 1800px;
@@ -530,6 +551,30 @@ main{
         background-image: url(../assets/h1-img-09.jpg);
         padding-bottom: 140px;
         margin: 50px 0px;
+
+        .fa-arrow-up-long{
+            right: 20px;
+            top: -80px;
+            font-size: 30px;
+            background-color: white;
+            padding: 10px;
+            border-radius: 100%;
+            box-shadow: 5px 10px 8px  #888888;
+            color: #FF4612;
+        }
+
+        .col-12{
+            .fa-arrow-up-long{
+                right: 20px;
+                top: 50%;
+                font-size: 30px;
+                background-color: white;
+                padding: 10px;
+                border-radius: 100%;
+                box-shadow: 5px 10px 8px  #888888;
+                color: #FF4612;
+            }
+        }
     }
     .container-cards{
         width: 1200px;
@@ -548,35 +593,58 @@ main{
         }
     }
 
-    .container .col-6{
-        hr {
-            border: none;
-            height: 2px;
-            width: 100px;
+    .container.p-5 {
+        .fa-arrow-up-long{
+            right: -280px;
+            top: 50%;
+            font-size: 30px;
+            background-color: white;
+            padding: 10px;
+            border-radius: 100%;
+            box-shadow: 5px 10px 8px  #888888;
             color: #FF4612;
-            background-color: #FF4612;
         }
-        .read-more{
-            height: 3px;
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-        }
-        .percent-bar {
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            height: 4px;
-            background-color: #dc3545;
-        }
-        .lorem{
-            font-size: 18px;
+        .col-6{
+            hr {
+                border: none;
+                height: 2px;
+                width: 100px;
+                color: #FF4612;
+                background-color: #FF4612;
+            }
+            .read-more{
+                height: 3px;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+            }
+            .percent-bar {
+                position: absolute;
+                bottom: -2px;
+                left: 0;
+                height: 4px;
+                background-color: #dc3545;
+            }
+            .lorem{
+                font-size: 18px;
+            }
         }
     }
 
     .container-sixth-section{
         background-color: #e1e1e167;
         height: 800px;
+
+        .fa-arrow-up-long{
+            right: 20px;
+            top: 50%;
+            font-size: 30px;
+            background-color: white;
+            padding: 10px;
+            border-radius: 100%;
+            box-shadow: 5px 10px 8px  #888888;
+            color: #FF4612;
+        }
 
         hr{
                 border: none;
@@ -644,9 +712,22 @@ main{
         background-color: #1E1E1E;
         padding: 0;
 
+        .fa-arrow-up-long{
+            right: 20px;
+            top: 80px;
+            font-size: 30px;
+            background-color: white;
+            padding: 10px;
+            border-radius: 100%;
+            box-shadow: 5px 10px 8px  #888888;
+            color: #FF4612;
+            z-index: 10000;
+        }
+
         h2{
             font-size: 200px;
             text-align: center;
+            top: -50px;
         }
 
         .col-12{
@@ -704,16 +785,38 @@ main{
         background-position: center;
         position: relative;
 
+        .fa-arrow-up-long{
+            right: 20px;
+            top: 200px;
+            font-size: 30px;
+            background-color: white;
+            padding: 10px;
+            border-radius: 100%;
+            box-shadow: 5px 10px 8px  #888888;
+            color: #FF4612;
+        }
+
     .col-12 {
         font-size: 3rem;
         color: #fff;
+        
     }
 }
     .container-ninth-section{
         height: 600px;
         width: 1200px;
         margin: 200px auto;
-        
+
+        .fa-arrow-up-long{
+            right: -340px;
+            top: -230px;
+            font-size: 30px;
+            background-color: white;
+            padding: 10px;
+            border-radius: 100%;
+            box-shadow: 5px 10px 8px  #888888;
+            color: #FF4612;
+        }
         
         .col-6.bg-world{
             background-image: url(../assets/h1-contact-rev-01.png);
@@ -774,9 +877,19 @@ main{
         }
         .row-images{
             
-
             .col-20{
                 width: 20%;
+
+                .fa-arrow-up-long{
+                    right: -330px;
+                    top: 0px;
+                    font-size: 30px;
+                    background-color: white;
+                    padding: 10px;
+                    border-radius: 100%;
+                    box-shadow: 5px 10px 8px  #888888;
+                    color: #FF4612;
+                }
             }
         }
     }

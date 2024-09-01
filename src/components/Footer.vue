@@ -50,8 +50,9 @@ export default {
                 </ul>
             </div>
         </div>
-        <div class="footer-bottom text-center">
+        <div class="footer-bottom text-center position-relative">
             Copyright Everlead©MikadoThemes
+            <a href="#"><i class="fa-solid fa-arrow-up-long position-absolute"></i></a>
         </div>
     </footer>
 </template>
@@ -109,5 +110,16 @@ export default {
     background-color: #FF4612;
     color: #CCCCCC;
     padding: 5px 0px;
+
+    .fa-arrow-up-long{
+        right: 20px;
+        bottom: 10px;
+        font-size: 30px;
+        background-color: white;
+        padding: 10px;
+        border-radius: 100%;
+        box-shadow: 5px 10px 8px  #888888;
+        color: #FF4612;
+    }
 }
 </style>
