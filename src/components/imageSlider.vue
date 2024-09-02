@@ -76,7 +76,7 @@ export default {
             
                 <div class="col-5">
                     <div class="container-jason px-4 py-5 fw-bold">
-                    <h2>Jason Bickford</h2>
+                    <h2 class="fw-bold">Jason Bickford</h2>
                     <p class="lorem fs-5">Founder and executive director</p>
                     <hr>
                     <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, amet sapiente! Eaque hic repudiandae, deleniti a totam excepturi dolorum officia cumque perferendis, aperiam minima quo accusamus itaque expedita consequatur eligendi.</p>
@@ -173,5 +173,8 @@ right: 10px;
     left: 0;
     bottom: 35px;
     background-color: #FF4612;
+}
+.lorem {
+    color: #BDBDBD;
 }
 </style>

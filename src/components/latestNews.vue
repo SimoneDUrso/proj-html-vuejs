@@ -34,7 +34,7 @@ export default {
                             </div>
                             <div class="card-body mt-5">
                                 <p class="card-title lorem"><i class="fa-regular fa-clock"></i> May 5, 2019 <i class="fa-regular fa-user"></i> Amanda Doe</p>
-                                <h3 class="card-text">Next investment</h3>
+                                <h3 class="card-text fw-bold">Next investment</h3>
                                 <p class="lorem"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                                 <div class="read-more fw-bold">
                                     READ MORE
@@ -54,7 +54,7 @@ export default {
                             </div>
                             <div class="card-body mt-5">
                                 <p class="card-title lorem"><i class="fa-regular fa-clock"></i> May 5, 2019 <i class="fa-regular fa-user"></i> Amanda Doe</p>
-                                <h3 class="card-text">Team Building</h3>
+                                <h3 class="card-text fw-bold">Team Building</h3>
                                 <p class="lorem"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                                 <div class="read-more fw-bold">
                                     READ MORE
@@ -74,7 +74,7 @@ export default {
                             </div>
                             <div class="card-body mt-5">
                                 <p class="card-title lorem"><i class="fa-regular fa-clock"></i> May 5, 2019 <i class="fa-regular fa-user"></i> Amanda Doe</p>
-                                <h3 class="card-text">New Business Day</h3>
+                                <h3 class="card-text fw-bold">New Business Day</h3>
                                 <p class="lorem"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                                 <div class="read-more fw-bold">
                                     READ MORE
@@ -164,9 +164,6 @@ export default {
                 color: #FF4612;
             }
         }
-        .lorem{
-            color: #BDBDBD;
-        }
     }
     .read-more {
         position: relative;
@@ -192,5 +189,8 @@ export default {
     .read-more:hover::after {
         opacity: 1;
     }
+}
+.lorem{
+    color: #BDBDBD;
 }
 </style>

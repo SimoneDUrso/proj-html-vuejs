@@ -8,22 +8,22 @@ props: {
 
 <template>
         <header>
-        <div class="container">
-            <div class="row">
-            <div class="col-6 pt-3">
-                <img src="../assets/logo-img-01.png" alt="Logo" class="w-25">
+            <div class="container-full px-5">
+                <div class="row">
+                <div class="col-6 pt-3">
+                    <img src="../assets/logo-img-01.png" alt="Logo" class="w-25">
+                </div>
+                <div class="col-6 pt-3">
+                    <nav>
+                    <ul>
+                        <li v-for="(item, index) in items" :key="index"><strong> {{ item }} </strong></li>
+                        <li><i class="fa fa-search"></i></li>
+                        <li><i class="fa fa-bars"></i></li>
+                    </ul>
+                    </nav>
+                </div>
+                </div>
             </div>
-            <div class="col-6 pt-3">
-                <nav>
-                <ul>
-                    <li v-for="(item, index) in items" :key="index"><strong> {{ item }} </strong></li>
-                    <li><i class="fa fa-search"></i></li>
-                    <li><i class="fa fa-bars"></i></li>
-                </ul>
-                </nav>
-            </div>
-            </div>
-        </div>
         </header>
 </template>
 

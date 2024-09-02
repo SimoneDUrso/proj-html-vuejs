@@ -32,7 +32,7 @@ export default {
     <footer>
         <div class="footer-container">
             <div v-for="section in sections" :key="section.title" class="footer-section">
-                <h3>{{ section.title }}</h3>
+                <h3 class="text-white fw-bold fs-4">{{ section.title }}</h3>
                 <hr>
                 <ul>
                     <li v-for="item in section.items" :key="item.text || item">
@@ -46,10 +46,15 @@ export default {
                         <!-- Visualizza il testo -->
                         <span>{{ item.text || item }}</span>
                     </li>
-                    <div class="about-icons">
-                        <i v-for="icon in section.icons" :class="icon.class" :key="icon.label"></i>
-                    </div>
                 </ul>
+                <div class="about-icons">
+                    <i v-for="icon in section.icons" :class="icon.class" :key="icon.label"></i>
+                </div>
+                <!-- Input text soltanto sotto a quei titoli uguali a CONTACT ME -->
+                <div v-if="section.title === 'Contact me'" class="subscribe-form">
+                    <input type="text" placeholder="Your Name" />
+                    <button class="fw-bold">SUBSCRIBE</button>
+                </div>
             </div>
         </div>
         <div class="footer-bottom text-center position-relative">
@@ -103,7 +108,6 @@ hr {
 .footer-section ul li i {
     margin-right: 8px;
     font-size: 16px;
-    line-height: 1;
     color: #FF4612;
 }
 
@@ -115,6 +119,36 @@ hr {
     font-size: 20px;
     margin-right: 15px;
     color: white;
+}
+
+.subscribe-form {
+    margin-top: 15px;
+    display: flex;
+    border: none;
+    padding-bottom: 2px;
+    border-bottom: 1px solid white;
+    width: 300px;
+}
+
+.subscribe-form input {
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #1e1e1e;
+    color: #FFFFFF;
+    border: none;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.subscribe-form button {
+    padding: 5px 10px;
+    background-color: #1e1e1e;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
 }
 
 .footer-bottom {
