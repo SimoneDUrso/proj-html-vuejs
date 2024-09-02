@@ -163,6 +163,7 @@ export default {
     h6:hover{
         color: #FF4612;
         cursor: pointer;
+        transition: color 0.3s ease;
     }
 }
 </style>

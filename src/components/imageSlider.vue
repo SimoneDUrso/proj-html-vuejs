@@ -114,6 +114,7 @@ export default {
         }
         .fa-brands{
             color: #FF4612;
+            transition: color 0.3s ease;
 
             &:hover{
                 color: black;

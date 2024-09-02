@@ -267,7 +267,7 @@ main {
 
         .row-images {
             img{
-
+                transition: 0.3s ease;
                 &:hover{
                     filter: sepia(1) saturate(10000%) hue-rotate(-10deg) brightness(1) contrast(1);
                     cursor: pointer;
